@@ -31,13 +31,12 @@ public class PlayerMovementAdvanced : MonoBehaviour
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
-    bool grounded;
+    [HideInInspector] public bool grounded; // Öffentlich machen
 
     [Header("Slope Handling")]
     public float maxSlopeAngle;
     private RaycastHit slopeHit;
     private bool exitingSlope;
-    
 
     public Transform orientation;
 
@@ -48,7 +47,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     Rigidbody rb;
 
-    public MovementState state;
+    [HideInInspector] public MovementState state; // Öffentlich machen
     public enum MovementState
     {
         walking,
