@@ -35,7 +35,7 @@ public class RandomHumming : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(minDelay, maxDelay)); // Wartezeit vor der nächsten Wiedergabe
 
             // Zufällige Auswahl eines der AudioClips
-            int randomSound = Random.Range(1, 4); // Zufällige Zahl zwischen 1 und 3
+            int randomSound = Random.Range(1, 4);
             AudioClip clipToPlay = null;
 
             switch (randomSound)
