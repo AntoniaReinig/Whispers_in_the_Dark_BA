@@ -3,6 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    void Start()
+    {
+        Time.timeScale = 1f; // Setzt den TimeScale auf 1, um sicherzustellen, dass das Spiel normal läuft
+    }
+
     // Diese Methode lädt die nächste Szene im Build-Index
     public void PlayGame()
     {

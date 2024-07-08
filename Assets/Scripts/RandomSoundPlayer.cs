@@ -8,7 +8,7 @@ public class RandomSoundPlayer : MonoBehaviour
 
     private float minPitch = 0.9f;
     private float maxPitch = 1.1f;
-    private float minVolume = 0.6f;
+    private float minVolume = 0.8f;
     private float maxVolume = 1.0f;
     private float minDelay = 25.0f; // Minimale Wartezeit zwischen den Soundeffekten in Sekunden
     private float maxDelay = 60.0f; // Maximale Wartezeit zwischen den Soundeffekten in Sekunden
